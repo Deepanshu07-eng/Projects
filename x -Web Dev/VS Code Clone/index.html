@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Studio Code- Code Editing. Redefined</title>
+    <link rel="icon" type="image/png" href="https://code.visualstudio.com/favicon.ico">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <nav>
+        <!-- Nav bar -->
+        <div id="main">
+            <div class="navbar">
+                <div class="container">
+                    <div id="vscodelogo">
+                        <a href="#" id="logo">
+                            <img src="https://code.visualstudio.com/favicon.ico" alt="VS Code Logo" style="height: 24px; width: 24px;">
+                            <span>Visual Studio Code</span>
+                        </a>
+                    </div>
+                    <div class="collapse">
+                        <ul class="nav-left">
+                            <li class="leftlinks"><a href="#">Docs</a></li>
+                            <li class="leftlinks"><a href="#">Updates</a></li>
+                            <li class="leftlinks"><a href="#">Blogs</a></li>
+                            <li class="leftlinks"><a href="#">API</a></li>
+                            <li class="leftlinks"><a href="#">Extensions</a></li>
+                            <li class="leftlinks"><a href="#">FAQ</a></li>
+                            <li class="leftlinks"><a href="#">GitHub Copilot</a></li>
+                        </ul>
+                        <ul class="nav-right">
+                            <li class="rightitems">
+                                <button id="mode">
+                                    <span>
+                                        <img class="theme-icon-dark" src="icons\theme-light.svg" alt="Switch to the light theme" style="height:20px; width:20px">
+                                    </span>
+                                </button>
+                            </li>
+                            <li class="rightitems">
+                                <form action="search" id="navsearch">
+                                    <div id="search">
+                                        <button id="search-icon">
+                                            <span>
+                                                <img class="searchicon" src="icons\search-dark.svg" alt="Search" style="height:16px; width:16px">
+                                            </span>
+                                        </button>
+                                        <input id="inp" type="text" placeholder="Search Docs">
+                                    </div>
+                                </form>
+                            </li>
+                            <li class="rightitems">
+                                <a href="/" id="download" class="bluebutton">
+                                    <span>Download</span>
+                                </a>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Update message -->
+        <div class="update">
+            <p class="message">
+                🚀 Get&nbsp;<a id="message-link" href="https://code.visualstudio.com/docs/copilot/setup-simplified2"> GitHub Copilot Free </a>&nbsp;in VS Code!
+            </p>
+        </div>
+        <!-- hero section -->
+        <section class="hero">
+            <div class="hero-text">
+                <div class="heroh1 vertical-center">
+                    <h1>Your code editor.</h1>
+                    <h1>Redefined with AI.</h1>
+                </div>
+                <div class="herobelowh1 vertical-center">
+                    <div class="herobuttons">
+                        <button class="btn" id="downloadwindows">Download for Windows</button>
+                        <button class="btn" id="copilot">Get Copilot Free</button>
+                    </div>
+                    <p id="herolinks">
+                        <a href="#" id="web">Web</a>,
+                        <a href="#" id="insiders">Insiders edition</a>, or
+                        <a href="#" id="otherplatforms">other platforms</a>
+                    </p>
+                    <p id="hiddenterms" class="hide">
+                        By using VS Code, you agree to its 
+                        <a href="#" id="licence">license</a> and
+                        <a href="#" id="privacy">privacy statement</a>.
+                    </p>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img class="roundborder" src="hero-background.webp" alt="" style="height: 831px; width: 1240px;">
+                <div class="herovideo">
+                    <video class="roundborder" width="1116" height="707" id="hero-video" poster="Screenshot 2025-01-20 173050.png" playsinline autoplay muted>
+                        <source src="hero-dark-lg.webm" type="video/webm">
+                    </video>
+                </div>
+            </div>
+            <div class="replay vertical-center">
+                <button class="btn" id="replaybtn">Replay</button>
+            </div>
+        </section>
+        <!-- 3 col feature section -->
+        <section class="features">
+            <div class="featureouter">
+                <div class="featuresection" id="firstfeature">
+                    <h2>Choose the model that works for you</h2>
+                    <p>Pick the model that works best for your project and team, including GPT 4o and Claude Sonnet.</p>
+                    <div class="featureimg">
+                        <img class="roundborder" src="vs images/choose-model-dark (1).webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="featureouter" >
+                <div class="featuresection" id="centerfeature">
+                    <h2>An expert on your codebase</h2>
+                    <p>Copilot locally indexes your codebase to understand what's relevant and supplements that context to interactions with Copilot.</p>
+                    <div class="featureimg">
+                        <img class="roundborder" src="vs images/multi-file-dark.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="featureouter">
+                <div class="featuresection">
+                    <h2>Personalized to your needs</h2>
+                    <p>Copilot works the way you do. Customize Copilot's prompts with details about your team's workflows, tools, and projects.</p>
+                    <div class="featureimg">
+                        <img class="roundborder" src="vs images/instructions-dark.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- coding languages panel -->
+         <section class="languagepanel">
+            <div class="languagepanelcontent">
+                <div class="textcontainer">
+                    <div>
+                        <h2>Code in any language</h2>
+                    </div>
+                    <div>
+                        <p>VS Code supports almost every major programming language. Several ship in the box, like JavaScript, TypeScript, CSS, and HTML, but extensions for others can be found in the VS Code Marketplace.</p>
+                    </div>
+                </div>
+                <div class="rightlanguages">
+                    <div class="languagecontainer">
+                        <div>
+                            <img class="roundborder" src="language icons/language-js.png" alt="">
+                            <code>JavaScript</code>
+                        </div>
+                        <div>
+                            <img class="roundborder" src="language icons/language-ts.png" alt="">
+                            <code>TypeScript</code>
+                        </div>
+                        <div>
+                            <img class="roundborder" src="language icons/language-python.png" alt="">
+                            <code>Python</code>
+                        </div>
+                        <div>
+                            <img class="roundborder" src="language icons/language-cs.png" alt="">
+                            <code>C#</code>
+                        </div>
+                        <div>
+                            <img class="roundborder" src="language icons/language-cpp.png" alt="">
+                            <code>C++</code>
+                        </div>
+                        <div>
+                            <img class="roundborder" src="language icons/language-html.png" alt="">
+                            <code>HTML</code>
+                        </div>
+                        <div>
+                            <img class="roundborder" src="language icons/language-java.png" alt="">
+                            <code>Java</code>
+                        </div>
+                        <div>
+                            <img class="roundborder" src="language icons/language-json.png" alt="">
+                            <code>JSON</code>
+                        </div>
+                        <div>
+                            <img class="roundborder" src="language icons/language-php.png" alt="">
+                            <code>PHP</code>
+                        </div>
+                        <div>
+                            <img class="roundborder" src="language icons/language-markdown.png" alt="">
+                            <code>Markdown</code>
+                        </div>
+                        <div>
+                            <img class="roundborder" src="language icons/language-powershell.png" alt="">
+                            <code>Powershell</code>
+                        </div>
+                        <div>
+                            <img class="roundborder" src="language icons/language-yaml.png" alt="">
+                            <code>YAML</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <footer>
+            <div class="footercontainer">
+                <div class="footer-row">
+                    <div class="footer-iconlist">   
+                        <a href="#"><img src="icons/x-icon.svg" alt="" style="height:18.4px; width:18px"></a>
+                        <a href="#"><img src="icons/github-icon.svg" alt="" style="height:25px; width:24px"></a>
+                        <a href="#"><img src="icons/youtube-icon.svg" alt="" style="height:25px; width:24px"></a>
+                    </div>
+                    <div id="microsoft">
+                        <a href="#"><img src="icons/microsoft.svg" alt="" style="height:24px; width:23px"></a>
+                    </div>
+                </div>
+                <div class="footer-row">
+                    <div class="footerlinks">
+                        <a href="#">Support</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms of Use</a>
+                        <a href="#">License</a>
+                    </div>
+                </div>
+            </div>
+         </footer>
+    </nav>
+</body>
+<script src="script.js"></script>
+</html>
